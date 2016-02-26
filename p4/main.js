@@ -7,7 +7,7 @@ Ademas del botón para agregar, habrá un input, al presionar el botón se debe 
 Ademas del input hay otro input para ingresar un color, el texto debe aparecer en ese color (1 pto)*/
 
 $(document).ready(function() {
-	$("ul").before("<a href='#' id='agregar' class='button'>Boton agregar</a>");
+	$("ul").before("<a href='#' id='agregar' class='button'>Boton agregar</a> <a href='#' id='quitar' class='button'>Boton quitar</a>");
 	$(".button").css({
 		padding: "3px",
 		background: "blue",
@@ -18,5 +18,9 @@ $(document).ready(function() {
 	$("#agregar").click(function() {
 		var numero = $("li").length + 1;
 		$("ul").append("<li>" + numero + "</li>");
+	});
+
+	$("#quitar").click(function() {
+		$("li:first").empty();
 	});
 });
