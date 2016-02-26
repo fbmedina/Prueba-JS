@@ -1,5 +1,6 @@
 var suma = 0;
 do {
 	var ingreso = prompt("ingresa un número");
-} while (ingreso != suma);
+	suma += parseInt(ingreso);
+} while (!isNaN(ingreso));
 console.log(suma);
