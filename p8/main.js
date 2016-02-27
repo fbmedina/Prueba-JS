@@ -7,10 +7,17 @@ Ingresar los datos dentro del objeto persona y acto seguido guardar este objeto 
 */
 
 $(document).ready(function() {
-	$("body").html("<form><label name='nombre'>Nombre:</label> <input name='nombre' type='text' value=''> <br> <label name='mail'>Mail:</label> <input  name='mail' class='mail' type='email' value=''><br><select name='genero'><option value='femenino'>Femenino</option><option value='masculino'>Masculino</option></select><input id='check' type='button' value='Enviar'></form>");
+	$("body").html("<form><label name='nombre'>Nombre:</label> <input name='nombre' type='text' value=''> <br> <label name='mail'>Mail:</label> <input  name='mail' class='mail' type='email' value=''><br><select class='genero' name='genero'><option value='femenino'>Femenino</option><option value='masculino'>Masculino</option></select><input id='check' type='button' value='Enviar'></form>");
 	$("#check").click(function(event) {
 		if ($(".mail").val() === "") {
 			alert("Pon un mail");
 		}
 	});
+
+
+	function Persona(nombre, mail, genero){
+		this.nombre = nombre;
+		this.mail = mail;
+		this.genero = genero;
+	}
 });
