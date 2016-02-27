@@ -127,6 +127,7 @@ Ademas del input hay otro input para ingresar un color, el texto debe aparecer e
 ### Pregunta 5 (1 pto)
 El usuario ingresa un número en un promt, luego el sistema debe contar esa cantidad de segundos antes de mostra "hola" en pantalla (sin console log, pero se puede ocupar jquery)
 
+
 ### Pregunta 6 (2 ptos)
 El usuario ingresa n en pantalla, se debe dibujar un cuadradro hueco de largo n.
 

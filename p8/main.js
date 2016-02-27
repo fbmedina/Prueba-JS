@@ -20,4 +20,6 @@ $(document).ready(function() {
 		this.mail = mail;
 		this.genero = genero;
 	}
+
+	
 });
