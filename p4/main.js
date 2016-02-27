@@ -8,6 +8,9 @@ Ademas del input hay otro input para ingresar un color, el texto debe aparecer e
 
 $(document).ready(function() {
 	$("ul").before("<a href='#' id='agregar' class='button'>Boton agregar</a> <a href='#' id='quitar' class='button'>Boton quitar</a>");
+	
+	$("ul").after("<input class='texto' type='text' value=''> <a href='#' id='agregar_input' class='button'>Agregar textor</a>");
+
 	$(".button").css({
 		padding: "3px",
 		background: "blue",
@@ -23,4 +26,9 @@ $(document).ready(function() {
 	$("#quitar").click(function() {
 		$("li:first").empty();
 	});
+
+	$("#agregar_input").click(function() {
+		$("ul").append($(".texto").val());
+	});
+
 });
